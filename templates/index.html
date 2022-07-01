@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="/static/css/style.css" rel="stylesheet"> 
+    <link href="/static/css/style.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Summarization with Hugging Face Transformer</title>
+    <title>Text Summarization with Hugging Face Transformers</title>
   </head>
 <body>
   <div class="header">
     <h1>Text Summarizer</h1>
   </div>
   <div class="box">
-    <p>Enter your text into the top box and click summarize. Your summarized text will be displayed in the bottom box.</p>
+    <p>Paste text into the top box and click summarize. Summarized text will be shown in the bottom box.</p>
     <form action="{{url_for('Summarize')}}" method="post">
         <textarea name="data" id="input-area" placeholder="Enter Text To Summarize..."></textarea>
-    
+
         <!-- <button type="reset">Clear</button>
         <button type="submit">Summarize</button> -->
-        
-    
+
+
         <textarea name="result" id="output-area" placeholder="Summarized Text...">{{result}}</textarea>
         <div id="button-container">
         <button type="submit" class="button" onclick="Check()">Summarize</button>
         <button type="reset" class="button">Clear</button>
-        <button class="button" onclick="myFunction()">Copy</button>
+        <!--<button class="button" onclick="myFunction()">Copy</button>-->
         <!-- <input type="range" min="20" max="300" name="MaxL" value="100"> -->
         <br><br><p>Choose Summary Length
         <input type="range" min="20" max="1000" name="MaxL" class="slider"></br></br></p>
 
         </div>
     </form>
-
-  
   </div>
   <script>
     function myFunction() {
@@ -46,7 +44,7 @@
         /* Copy the text inside the text field */
         navigator.clipboard.writeText(copyText.value);
     }
-</script> 
+</script>
 <script>
     function Check() {
 
@@ -59,8 +57,15 @@
         }
     }
 </script>
+
+<div class="wrapper">
+    <div class="content">
+        <p><a href="https://github.com/vinazol/text-summarization-huggingface">GitHub Repo</a> </p>
+    </div>
+    <div id="footer">
+        <p> Veena Solomon | <a href="https://github.com/vinazol">GitHub | <a href="https://linkedin.com/in/vinazol">LinkedIn</a></p>
+    </div>
+</div>
+
 </body>
 </html>
-  
-  
-  
