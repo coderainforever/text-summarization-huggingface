@@ -1,48 +1,48 @@
 .header {
     background-color: #78d77c;
     padding: 10px;
-    
+
   }
-  
+
   h1 {
     font-family: 'Raleway', sans-serif;
-    color: #052737;
+    color: #34495E ;
     text-align: center;
   }
-  
+
   body
   {
-    background-color: #FEFFF5;
+    background-color: #F8FAFF;
   }
-  
+
   p {
     font-family: 'Raleway', sans-serif;
     color: #3088AE;
-    margin-top: 20px; 
+    margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
   }
-  
+
   .box {
     margin-left: 10%;
     margin-right: 10%;
   }
-  
+
   h1 {
-    color: #c7e3ed;
+    color: #34495E;
   }
-  
+
   button {
     width: 20%;
     float: left;
     font-family: 'Raleway', sans-serif;
   }
-  
+
   .button {
     background-color: #adf2f0; /* Green */
     border: 1px solid green;
     color: #3088AE;
-  
+
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -51,11 +51,11 @@
     cursor: pointer;
     float: left;
   }
-  
+
   .button:hover {
       background-color: #78d77c;
   }
-  
+
   @media all and (min-width: 960px) {
   h1{
       font-size: 50px;
@@ -65,13 +65,13 @@
     margin-right: 20%;
   }
   }
-  
+
   @media all and (max-width: 959px) and (min-width: 600px) {
   h1{
       font-size: 5vw;
     }
   }
-  
+
   @media all and (max-width: 599px) and (min-width: 50px) {
   h1{
       font-size:10vw;
@@ -80,7 +80,7 @@
       width: 50%;
   }
   }
-  
+
   textarea {
     padding-left: 5px;
     border: solid #8FB0EB 1px;
@@ -91,15 +91,15 @@
     display: block;
     margin-top: 10px;
   }
-  
+
   #input-area {
      background-color: #CEF9EE;
   }
-  
+
   #output-area {
      background-color: #D2F8DF;
   }
-  
+
   #button-container {
     margin: 10px 0px 0px 0px;
     padding: 0px;
@@ -108,7 +108,7 @@
   .slidecontainer {
     width: 100%;
   }
-  
+
   .slider {
     -webkit-appearance: none;
     width: 100%;
@@ -119,11 +119,11 @@
     -webkit-transition: .2s;
     transition: opacity .2s;
   }
-  
+
   .slider:hover {
     opacity: 1;
   }
-  
+
   .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -132,10 +132,29 @@
     background: #04AA6D;
     cursor: pointer;
   }
-  
+
   .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
     background: #04AA6D;
     cursor: pointer;
   }
+  .wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.content {
+    /* padding the footer adds 40 to footer height */
+    padding-bottom: 140px;
+}
+
+#footer {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #78d77c;
+   color: #34495E;
+   text-align: center;
+}
